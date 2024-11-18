@@ -76,7 +76,7 @@ span{
     color: black;
 }
 .progressbar{
-    width: 525px;
+    width: 80%;
     height: 34px;
     border: 2px solid grey;
     background-color: #E0A863;
@@ -85,6 +85,54 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 500ms ease-in-out;
+    animation: 2000ms kaizen cubic-bezier(.97,1.04,.99,1.06) infinite;
+}
+@keyframes  kaizen{
+    0%{
+        width: 80%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+        
+    }
+    10% {
+        width: 50%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+
+    }
+    20% {
+        width: 60%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+
+    }
+    30% {
+        width: 90%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+
+    }
+    40% {
+        width: 30%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+
+    }
+    45%{
+        width: 40%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+
+    }
+    60%{
+        width: 10%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+
+    }
+    70%{
+        position: absolute;
+        width: 70%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+    }
+    100%{
+        width: 50%;
+        background: center / cover url(https://i.gifer.com/Ui00.gif);
+    }
 }
 .progressinfo{
     display: flex;
@@ -99,6 +147,14 @@ span{
     color: white;
     display: flex;
     align-items: center;
+}
+.progressbck:hover .progressbar{
+    width: 30%;
+    background-color: rgb(131, 11, 11);
+    box-shadow: 10px 2px 15px red;
+}
+.progressbck:hover p{
+    color: rgb(255, 0, 0);
 }
 .loadingpositioner{
     width: 100%;
